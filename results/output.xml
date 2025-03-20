@@ -1,87 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-20T10:03:00.696301" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-20T12:09:25.050943" rpa="false" schemaversion="5">
 <suite id="s1" name="Robot-Framework-Env" source="C:\projetos\robot-framework-env">
 <suite id="s1-s1" name="Utilizando o env" source="C:\projetos\robot-framework-env\Utilizando_o_env">
 <suite id="s1-s1-s1" name="Executar" source="C:\projetos\robot-framework-env\Utilizando_o_env\executar.robot">
 <test id="s1-s1-s1-t1" name="Logar com usuário Problem_user" line="16">
-<kw name="Abrir o navegador" owner="resource" type="SETUP">
+<kw name="Abrir o navegador" owner="keyword" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-20T10:03:01.068101" level="INFO">Opening browser 'Chrome' to base url 'None'.</msg>
+<msg time="2025-03-20T12:09:25.434785" level="INFO">Opening browser 'Chrome' to base url 'None'.</msg>
 <arg>browser=Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-20T10:03:01.067638" elapsed="1.618116"/>
+<status status="PASS" start="2025-03-20T12:09:25.434185" elapsed="1.561824"/>
 </kw>
-<status status="PASS" start="2025-03-20T10:03:01.066639" elapsed="1.619352"/>
+<status status="PASS" start="2025-03-20T12:09:25.433037" elapsed="1.563224"/>
 </kw>
-<kw name="Login problem_user" owner="resource">
+<kw name="Login problem_user" owner="keyword">
 <kw name="Set Global Variable" owner="BuiltIn">
-<msg time="2025-03-20T10:03:02.687380" level="INFO">${user_standart} = problem_user</msg>
+<msg time="2025-03-20T12:09:26.997933" level="INFO">${user_standart} = problem_user</msg>
 <arg>${user_standart}</arg>
 <arg>${user_problem}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<status status="PASS" start="2025-03-20T10:03:02.686975" elapsed="0.000704"/>
+<status status="PASS" start="2025-03-20T12:09:26.997310" elapsed="0.001023"/>
 </kw>
 <kw name="Set Global Variable" owner="BuiltIn">
-<msg time="2025-03-20T10:03:02.688498" level="INFO">${password_standart} = secret_sauce</msg>
+<msg time="2025-03-20T12:09:26.999263" level="INFO">${password_standart} = secret_sauce</msg>
 <arg>${password_standart}</arg>
 <arg>${password_problem}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<status status="PASS" start="2025-03-20T10:03:02.687858" elapsed="0.001002"/>
+<status status="PASS" start="2025-03-20T12:09:26.998533" elapsed="0.001299"/>
 </kw>
-<kw name="Efetuar login" owner="resource">
+<kw name="Efetuar login" owner="login">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-03-20T10:03:02.690120" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<msg time="2025-03-20T12:09:27.001335" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
 <arg>url=https://www.saucedemo.com/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-03-20T10:03:02.689751" elapsed="1.769934"/>
+<status status="PASS" start="2025-03-20T12:09:27.000903" elapsed="1.522411"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>text=Accepted usernames are</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-03-20T10:03:04.459917" elapsed="0.017711"/>
+<status status="PASS" start="2025-03-20T12:09:28.524003" elapsed="0.016368"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-20T10:03:04.478384" level="INFO">Typing text 'problem_user' into text field '(//input[@id='user-name'])[1]'.</msg>
+<msg time="2025-03-20T12:09:28.541763" level="INFO">Typing text 'problem_user' into text field '(//input[@id='user-name'])[1]'.</msg>
 <arg>(//input[@id='user-name'])[1]</arg>
 <arg>${user_standart}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-20T10:03:04.477844" elapsed="0.116319"/>
+<status status="PASS" start="2025-03-20T12:09:28.540659" elapsed="0.173001"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-20T10:03:04.594951" level="INFO">Typing text 'secret_sauce' into text field '//input[@id='password']'.</msg>
+<msg time="2025-03-20T12:09:28.715277" level="INFO">Typing text 'secret_sauce' into text field '//input[@id='password']'.</msg>
 <arg>//input[@id='password']</arg>
 <arg>${password_standart}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-20T10:03:04.594428" elapsed="0.102998"/>
+<status status="PASS" start="2025-03-20T12:09:28.714195" elapsed="0.140314"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-03-20T10:03:04.698072" level="INFO">Clicking button 'Login'.</msg>
+<msg time="2025-03-20T12:09:28.855570" level="INFO">Clicking button 'Login'.</msg>
 <arg>Login</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-20T10:03:04.697649" elapsed="0.100966"/>
+<status status="PASS" start="2025-03-20T12:09:28.854790" elapsed="0.124377"/>
 </kw>
-<status status="PASS" start="2025-03-20T10:03:02.689147" elapsed="2.109661"/>
+<status status="PASS" start="2025-03-20T12:09:27.000183" elapsed="1.979185"/>
 </kw>
-<status status="PASS" start="2025-03-20T10:03:02.686413" elapsed="2.112486"/>
+<status status="PASS" start="2025-03-20T12:09:26.996713" elapsed="1.982752"/>
 </kw>
-<kw name="Fechar o navegador" owner="resource" type="TEARDOWN">
+<kw name="Fechar o navegador" owner="keyword" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-03-20T10:03:04.800309" elapsed="2.250301"/>
+<status status="PASS" start="2025-03-20T12:09:28.980910" elapsed="2.241734"/>
 </kw>
-<status status="PASS" start="2025-03-20T10:03:04.799529" elapsed="2.251339"/>
+<status status="PASS" start="2025-03-20T12:09:28.980094" elapsed="2.242735"/>
 </kw>
 <doc>Este cenário tem foco de mostrar como
 utilizar o login através do env transformando as
 variáveis locais em variáveis globais</doc>
 <tag>login_problem</tag>
-<status status="PASS" start="2025-03-20T10:03:01.065129" elapsed="5.986064"/>
+<status status="PASS" start="2025-03-20T12:09:25.431399" elapsed="5.791714"/>
 </test>
-<status status="PASS" start="2025-03-20T10:03:00.730496" elapsed="6.322149"/>
+<status status="PASS" start="2025-03-20T12:09:25.084721" elapsed="6.139967"/>
 </suite>
-<status status="PASS" start="2025-03-20T10:03:00.727306" elapsed="6.326892"/>
+<status status="PASS" start="2025-03-20T12:09:25.080400" elapsed="6.146089"/>
 </suite>
-<status status="PASS" start="2025-03-20T10:03:00.701399" elapsed="6.354128"/>
+<status status="PASS" start="2025-03-20T12:09:25.056273" elapsed="6.171603"/>
 </suite>
 <statistics>
 <total>
