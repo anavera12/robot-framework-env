@@ -58,6 +58,6 @@ Login problem_user
 🔹 Assim, o mesmo código de login funciona para múltiplos usuários sem precisar duplicar código!
 
 ## 🔥 Conclusão
-- ✅ Protegemos credenciais usando env.robot (que não é commitado).
+- ✅ Protegemos credenciais usando env.resource (que não é commitado).
 - ✅ Reutilizamos a lógica de login, alterando dinamicamente as variáveis com Set Global Variable.
 - ✅ Evitamos exposição de dados sensíveis, garantindo segurança no repositório.
