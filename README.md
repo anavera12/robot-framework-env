@@ -13,12 +13,12 @@ Este repositório demonstra como utilizar o env.robot para armazenar credenciais
 📦 ROBOT-FRAMEWORK-ENV
  ┣ 📂 Settings/
  ┣ 📂 auth
- ┃ ┗  📜 env.robot        # Arquivo contendo credenciais (IGNORADO no Git)
+ ┃ ┗  📜 env.resource     # Arquivo contendo credenciais (IGNORADO no Git)
  ┣ 📂 login
  ┃ ┗  📜 resouce.robot    # Implementação do login usando credenciais do env.robot       
  ┣ 📂 Utilizando_o_env
  ┃ ┣ 📜 executar.robot    # Teste chamando o login
- ┃ ┗ 📜 resource.robot    
+ ┃ ┗ 📜 keyword.resource    
  ┣ 📜 .gitignore          # Impede o commit do env.robot
  ┗ 📜 README.md           # Você está aqui! 😃
 ```
@@ -39,7 +39,7 @@ ${PASSWORD_PROBLEM}    senha_secundaria
 
 ```
 # Evita que credenciais sejam commitadas
-env.robot
+env.resource
 ```
 
 ## 🔄 Reutilizando o Login com Set Global Variable
