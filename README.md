@@ -12,10 +12,10 @@ Este repositório demonstra como utilizar o env.resource para armazenar credenci
 ```
 📦 ROBOT-FRAMEWORK-ENV
  ┣ 📂 Settings/
- ┣ 📂 auth
- ┃ ┗  📜 env.resource     # Arquivo contendo credenciais (IGNORADO no Git)
- ┣ 📂 login
- ┃ ┗  📜 resouce.robot    # Implementação do login usando credenciais do env.robot       
+ ┃ ┗ 📂 auth
+ ┃ ┣  📜 env.resource     # Arquivo contendo credenciais (IGNORADO no Git)
+ ┃ ┗ 📂 login
+ ┃ ┣  📜 login.resource   # Implementação do login usando credenciais do env.robot       
  ┣ 📂 Utilizando_o_env
  ┃ ┣ 📜 executar.robot    # Teste chamando o login
  ┃ ┗ 📜 keyword.resource    
