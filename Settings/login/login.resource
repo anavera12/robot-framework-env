@@ -1,7 +1,7 @@
 *** Settings ***
 
 Library    SeleniumLibrary
-Resource    ../auth/env.robot
+Resource    ../auth/env.resource
 
 *** Keywords ***
 

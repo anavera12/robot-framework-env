@@ -1,6 +1,6 @@
 *** Settings ***
 
-Resource    ./resource.robot
+Resource    ./keyword.resource
 Test Setup    Abrir o navegador
 Test Teardown    Fechar o navegador
 
