@@ -1,10 +1,10 @@
 # 📌 Repositório: Login Seguro com Robot Framework
 
-Este repositório demonstra como utilizar o env.robot para armazenar credenciais sensíveis, evitando exposição de dados no controle de versão (Git). Além disso, mostramos como reutilizar uma única lógica de login, substituindo credenciais dinamicamente com Set Global Variable.
+Este repositório demonstra como utilizar o env.resource para armazenar credenciais sensíveis, evitando exposição de dados no controle de versão (Git). Além disso, mostramos como reutilizar uma única lógica de login, substituindo credenciais dinamicamente com Set Global Variable.
 
 ## 🚀 Objetivo
 - ✔️ Manter credenciais seguras e fora do código-fonte.
-- ✔️ Usar o env.robot para armazenar variáveis sensíveis.
+- ✔️ Usar o env.resource para armazenar variáveis sensíveis.
 - ✔️ Evitar o vazamento de dados sensíveis no repositório.
 - ✔️ Demonstrar como reutilizar a lógica de login com variáveis globais.
 
@@ -25,8 +25,8 @@ Este repositório demonstra como utilizar o env.robot para armazenar credenciais
 
 # 🔑 Configurando o env.robot
 
-O env.robot armazena credenciais e outras informações sensíveis, garantindo que não sejam expostas no repositório.
-📌 Exemplo do env.robot (NÃO COMMITAR NO GIT!)
+O env.resource armazena credenciais e outras informações sensíveis, garantindo que não sejam expostas no repositório.
+📌 Exemplo do env.resource (NÃO COMMITAR NO GIT!)
 
 ```
 *** Variables ***
