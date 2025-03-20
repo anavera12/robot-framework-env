@@ -13,7 +13,8 @@ Fechar o navegador
 Login standart_user
     Efetuar login
 
-Login problem_user
-    Set Global Variable    ${user_standart}    ${user_problem}
-    Set Global Variable    ${password_standart}    ${password_problem}
+Login problem_user 
+    Set Test Variable    ${user_standart}    ${user_problem}
+    Set Test Variable    ${password_standart}    ${password_problem}
     Efetuar login
+

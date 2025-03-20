@@ -19,3 +19,4 @@ Logar com usuário Problem_user
     ...    variáveis locais em variáveis globais
     [Tags]    login_problem
     Login problem_user
+
