@@ -51,8 +51,8 @@ Ao invés de duplicar a lógica de login, alteramos as credenciais dinamicamente
 ```
 *** Keywords ***
 Login problem_user
-    Set Global Variable    ${user_standart}    ${user_problem}
-    Set Global Variable    ${password_standart}    ${password_problem}
+    Set Test Variable    ${user_standart}    ${user_problem}
+    Set Test Variable    ${password_standart}    ${password_problem}
     Efetuar login
 ```
 🔹 Assim, o mesmo código de login funciona para múltiplos usuários sem precisar duplicar código!
