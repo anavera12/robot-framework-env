@@ -15,11 +15,11 @@ Este repositório demonstra como utilizar o env.resource para armazenar credenci
  ┃ ┗ 📂 auth
  ┃ ┣  📜 env.resource     # Arquivo contendo credenciais (IGNORADO no Git)
  ┃ ┗ 📂 login
- ┃ ┣  📜 login.resource   # Implementação do login usando credenciais do env.robot       
+ ┃ ┣  📜 login.resource   # Implementação do login usando credenciais do env.resource       
  ┣ 📂 Utilizando_o_env
  ┃ ┣ 📜 executar.robot    # Teste chamando o login
  ┃ ┗ 📜 keyword.resource    
- ┣ 📜 .gitignore          # Impede o commit do env.robot
+ ┣ 📜 .gitignore          # Impede o commit do env.resource
  ┗ 📜 README.md           # Você está aqui! 😃
 ```
 
