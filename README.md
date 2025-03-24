@@ -59,5 +59,5 @@ Login problem_user
 
 ## 🔥 Conclusão
 - ✅ Protegemos credenciais usando env.resource (que não é commitado).
-- ✅ Reutilizamos a lógica de login, alterando dinamicamente as variáveis com Set Global Variable.
+- ✅ Reutilizamos a lógica de login, alterando dinamicamente as variáveis com Set Test Variable.
 - ✅ Evitamos exposição de dados sensíveis, garantindo segurança no repositório.
