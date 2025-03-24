@@ -42,11 +42,11 @@ ${PASSWORD_PROBLEM}    senha_secundaria
 env.resource
 ```
 
-## 🔄 Reutilizando o Login com Set Global Variable
+## 🔄 Reutilizando o Login com Set Test Variable
 
 Ao invés de duplicar a lógica de login, alteramos as credenciais dinamicamente.
 
-📌 Exemplo de reutilização do login com Set Global Variable
+📌 Exemplo de reutilização do login com Set Test Variable
 
 ```
 *** Keywords ***
